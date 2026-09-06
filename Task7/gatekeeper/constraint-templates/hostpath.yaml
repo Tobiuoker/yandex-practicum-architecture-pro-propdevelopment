@@ -1,0 +1,26 @@
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: k8snohostpath
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sNoHostPath
+      validation:
+        openAPIV3Schema:
+          type: object
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      code:
+        - engine: Rego
+          source:
+            version: "v1"
+            rego: |
+              package k8snohostpath
+
+              violation contains {"msg": msg} if {
+                some volume in object.get(input.review.object.spec, "volumes", [])
+                object.get(volume, "hostPath", null) != null
+                msg := sprintf("volume %q: hostPath is forbidden", [volume.name])
+              }
