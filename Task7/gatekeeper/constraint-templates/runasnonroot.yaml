@@ -1,0 +1,48 @@
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: k8srequiredsecuritycontext
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sRequiredSecurityContext
+      validation:
+        openAPIV3Schema:
+          type: object
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      code:
+        - engine: Rego
+          source:
+            version: "v1"
+            rego: |
+              package k8srequiredsecuritycontext
+
+              containers contains container if {
+                some field in ["containers", "initContainers", "ephemeralContainers"]
+                container := object.get(input.review.object.spec, field, [])[_]
+              }
+
+              effective(container, field, fallback) := value if {
+                pod_value := object.get(input.review.object.spec, ["securityContext", field], fallback)
+                value := object.get(container, ["securityContext", field], pod_value)
+              }
+
+              violation contains {"msg": msg} if {
+                some container in containers
+                effective(container, "runAsNonRoot", false) != true
+                msg := sprintf("container %q: runAsNonRoot must be true", [container.name])
+              }
+
+              violation contains {"msg": msg} if {
+                some container in containers
+                effective(container, "runAsUser", -1) == 0
+                msg := sprintf("container %q: runAsUser must not be 0", [container.name])
+              }
+
+              violation contains {"msg": msg} if {
+                some container in containers
+                object.get(container, ["securityContext", "readOnlyRootFilesystem"], false) != true
+                msg := sprintf("container %q: readOnlyRootFilesystem must be true", [container.name])
+              }

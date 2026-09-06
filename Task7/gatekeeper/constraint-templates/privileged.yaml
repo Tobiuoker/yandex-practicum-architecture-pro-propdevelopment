@@ -1,0 +1,31 @@
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: k8snoprivileged
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sNoPrivileged
+      validation:
+        openAPIV3Schema:
+          type: object
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      code:
+        - engine: Rego
+          source:
+            version: "v1"
+            rego: |
+              package k8snoprivileged
+
+              containers contains container if {
+                some field in ["containers", "initContainers", "ephemeralContainers"]
+                container := object.get(input.review.object.spec, field, [])[_]
+              }
+
+              violation contains {"msg": msg} if {
+                some container in containers
+                container.securityContext.privileged == true
+                msg := sprintf("container %q: privileged must not be true", [container.name])
+              }

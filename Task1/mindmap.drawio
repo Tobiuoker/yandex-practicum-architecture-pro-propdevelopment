@@ -1,0 +1,97 @@
+<mxfile host="65bd71144e">
+    <diagram id="IvwQOGt-WtP3ShZB9CX0" name="Page-1">
+        <mxGraphModel dx="2616" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="28" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Безопасность данных" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="350" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Публичные данные" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Конфиденциальные данные" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Секретные данные" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="550" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Внутренние данные" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="550" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Утечка данных - незначительный риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;После формального разрешения на публикацию раскрытие не нарушает конфиденциальность.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-1300" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Потеря данных - значительный риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Недоступность каталога и объявлений останавливает подбор и снижает конверсию.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-1040" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Искажение данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Неверные цена или идентификатор объекта могут перейти в бронирование и сделку, вызвать финансовые потери и претензии.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-780" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Некачественные данные - значительный риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Неактуальные планы, фото, характеристики и уведомления приводят к неверному выбору, ошибкам в личном кабинете и жалобам клиентов.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-520" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Обесценивание данных - значительный риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Устаревший и недостоверный публичный контент перестает поддерживать продажи и аналитику&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-260" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Утечка данных - значительный риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Раскрытие показывает архитектуру, процессы, фонд, статусы и планы - это облегчает атаки и дает конкурентные сведения, даже без прямых персональных данных.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-1300" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Потеря данных - значительный риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Без статусов, журналов и схем интеграций затрудняются операции и поддержка&lt;/div&gt;&lt;div&gt;Однако часть данных восстанавливается из систем и резервных копий&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-1040" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Искажение данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ошибочные статусы объекта, брони и маршрутизация между сервисами вызывают неверные действия и каскадные расхождения.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-780" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Некачественные данные - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Несогласованные данные регистрации порождают дубли и смешение записей - симптом уже проявляется в личном кабинете.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-520" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Обесценивание данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Без владельца, каталога, lineage и единых семантик данные нельзя безопасно применять в BI, ML и AI; это уже блокирует новые продукты.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-260" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Утечка данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Персональный данные, сведения о собственности, платежах, сделках и квартире могут попасть другому клиенту или партнeру. Возможны мошенничество и штрафы.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Потеря данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Утрата истории сделок, платежей, обращений и подтверждений может остановить обслуживание, лишить доказательств обязательств и вызвать юридические споры.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Искажение данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Подмена ФИО, собственника, объекта, суммы или статуса сделки ведeт к чужим данным в ЛК, ошибочным платежам/регистрации и юридически значимым последствиям.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="1180" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Некачественные данные - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Несколько точек регистрации без координации создают дубли, неполные профили и неверные связи клиент–объект.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="1440" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Обесценивание данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Данные без подтверждeнного происхождения, качества и правовой основы нельзя применять в аналитике. Потребуется дорогая очистка или удаление.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="1700" y="145" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Утечка данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ключи, токены и привилегированные учeтные данные дают прямой доступ к сервисам, БД, платeжным/государственным API и, для умного дома, к физическому доступу.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Потеря данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Потеря ключей и сертификатов нарушит интеграции и доступ. Утрата ключа шифрования резервных копий может сделать восстановление невозможным.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Искажение данных - критический риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Изменение ролей, ACL, сертификатов, правил firewall позволяет обходить контроль, подделывать операции и закрепляться в инфраструктуре.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="1180" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Некачественные данные - значительный риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Просроченные сертификаты, общие и бесхозные аккаунты, избыточные права повышают поверхность атаки. Риск снижается инвентаризацией и ротацией.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="1440" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Обесценивание данных - значительный риск.&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Секрет с неизвестным владельцем, сроком или фактом компрометации больше нельзя считать доверенным. Требуется аварийная ротация и возможен простой.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="1700" y="525" width="240" height="110" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
