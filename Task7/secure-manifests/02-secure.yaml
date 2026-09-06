@@ -1,4 +1,3 @@
-# Нарушение: hostPath запрещен, даже при readOnly=true у volumeMount.
 apiVersion: v1
 kind: Pod
 metadata:

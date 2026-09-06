@@ -24,7 +24,6 @@ spec:
                 container := object.get(input.review.object.spec, field, [])[_]
               }
 
-              # Container-level settings override Pod-level settings.
               effective(container, field, fallback) := value if {
                 pod_value := object.get(input.review.object.spec, ["securityContext", field], fallback)
                 value := object.get(container, ["securityContext", field], pod_value)
